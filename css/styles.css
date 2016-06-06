@@ -1,0 +1,286 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+
+  padding-bottom: 20px;
+}
+
+h2 {
+	font-family: 'Oxygen', sans-serif;
+	margin-bottom: 25px;
+	color: #353c51;
+}
+
+
+a, a:visited {
+	color: #535c79;
+}
+
+a:hover {
+	color: #6f7dac;
+}
+
+/* increment reveal animations */
+.inc1,
+.inc2,
+.inc3,
+.inc4,
+.inc5 {
+	opacity: 0;
+}
+
+
+footer {
+	margin-top: 30px;
+}
+
+footer p{
+	color: #666;
+}
+
+#demo:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+#download h3 {
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+#download ul {
+	list-style: none;
+}
+
+#download p{
+	padding: 10px;
+}
+
+#download ul li {
+	font-size: 16px;
+	line-height: 26px;
+	color: #333;
+}
+#download ul {
+	margin-bottom: 40px;
+}
+
+#home .btn {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.jumbotron {
+	background-image: url("../images/texture.jpg");
+	background-position: center 0px;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	text-shadow: 1px 1px #000;
+	padding-top: 80px;
+	color: #ededed;
+	padding-bottom: 30px;
+}
+
+.download {
+	background: #ededed;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+.jumbotron h1 {
+	color: #FFF;
+	font-size: 56px;
+}
+
+
+.jumbotron p {
+	font-size: 20px;
+}
+.jumbotron small{
+	color:#85b0cf;
+}
+
+
+.docs h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+#home p{
+	color: #666;
+}
+
+#home .btn-default {
+	margin-top: 20px;
+}
+
+.btn-default {
+	background: linear-gradient(#FFF 0%, #ececec 100%);
+	text-shadow: 1px 1px #FFF;
+	padding: 10px 25px 10px 25px;
+	font-weight: 700;
+	 -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+	 transition: all .3s;
+	 font-size: 13px;
+}
+
+.btn-default:hover {
+	color:#3068b6;
+}
+
+#examples .example-info {
+	background:linear-gradient(#f8f8f8 0%, #fafafa 100%);
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #333;
+	border: 1px solid #ececec;
+}
+
+/******** NAVBAR *************/
+
+.navbar{
+    background: rgba(0,0,0,0.3);
+     -webkit-transition: padding .3s, background .3s, border .3s;
+     -moz-transition: padding .3s, background .3s, border .3s;
+     transition: padding .3s, background .3s, border .3s;
+     border-bottom: none;
+     padding: 6px;
+     background-position: center bottom;
+}
+
+.navbar-nav {
+	margin-top:5px;
+}
+
+.navbar-nav li a {
+	padding: 10px 20px;
+	-webkit-transition: all .3s;
+     -moz-transition: all .3s;
+	 transition: all .3s;
+}
+
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:visited {
+	font-size:14px;
+	font-weight: 400;
+	color: #b4bedf;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	color: #FFF;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:visited, 
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background: linear-gradient(#FFF 0%, #ececec 100%);
+	color:#000;
+	border-radius:3px;
+	text-shadow: 1px 1px #FFF;
+	box-shadow: 1px 1px 1px #0f223b;
+	 
+}
+
+.navbar-shrink {
+	background-image: url("../images/texture.jpg");
+	background-position: center bottom;
+    padding: 3px;
+    border-bottom: 1px solid #151d32;
+}
+
+.navbar-brand{
+	font-size: 24px;
+	text-shadow: 1px 1px #000;
+	opacity: 0;
+}
+
+.navbar-brand:active, .navbar-brand:visited {
+	color: #ffffff;
+}
+
+.navbar-brand:hover {
+	color: #707a99;
+}
+
+.navbar-inverse .navbar-toggle {
+	background: linear-gradient(#ffffff 0%, #ececec 100%);
+	color: #666;
+	font-size: 22px;
+	padding: 0 10px 0 10px;
+}
+
+
+
+/*** SIDE NAVIGATION  ***********/
+
+ul.nav-tabs{
+    width:220px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    background: #FFF;
+}
+
+@media (max-width: 992px) {
+	.examples-nav .nav-tabs{
+		width: auto;
+	}
+	.docs-nav{
+		display: none;
+	}
+	
+	.navbar{
+    	background: rgba(14,44,70,1);
+    }
+    
+}
+
+
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+    background: #FFF;
+}
+ul.nav-tabs li:first-child{
+    border-top: none;
+}
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+    color: #535c79;
+    -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+	 transition: all .3s;
+	 border: none;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover, ul.nav-tabs li.active a:focus{
+    color: #333;
+    border: none;
+    background: linear-gradient(#FFF 0%, #ececec 100%);
+    border: none;
+}
+ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix{
+    top: 60px; /* Set the top position of pinned element */
+}
+    
